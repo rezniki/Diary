@@ -118,22 +118,22 @@ function App() {
     ]
   }; 
 
-  useEffect(() => {
-    const getRecord = async () => {
-      let data = await axios ({
-        method: 'get',
-        url: 'https://64fc5056605a026163ae5cee.mockapi.io/records',
-        withCredentials: false,
-      });
+  // useEffect(() => {
+  //   const getRecord = async () => {
+  //     let data = await axios ({
+  //       method: 'get',
+  //       url: 'https://64fc5056605a026163ae5cee.mockapi.io/records',
+  //       withCredentials: false,
+  //     });
 
-      console.log('data: ', data.data);
-      setRecord(data.data);
-    };
-    getRecord();
+  //     console.log('data: ', data.data);
+  //     setRecord(data.data);
+  //   };
+  //   getRecord();
 
-    // let recordLoc = localStorage.getItem('myCards');
-    // setRecord(JSON.parse(recordLoc) || []);
-  }, []);
+  //   // let recordLoc = localStorage.getItem('myCards');
+  //   // setRecord(JSON.parse(recordLoc) || []);
+  // }, []);
 
   return (
     <div className='record__container'>
