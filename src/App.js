@@ -1,8 +1,6 @@
 import { useState } from 'react';
-import { useEffect } from 'react';
 import './App.css';
 import Hide from './Hide/Hide.jsx';
-import axios from 'axios';
 import Quiz from 'react-quiz-component';
 import Confetti from 'react-confetti';
 
